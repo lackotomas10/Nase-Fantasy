@@ -1,0 +1,19 @@
+*{
+    text-align: center;
+}
+
+header{
+    background-color: blue;
+}
+
+nav{
+    justify-content: space-around;
+    display: flex;
+    background-color: blue;
+}
+
+.LinkImg{
+    width: 15vw;
+    height: auto;
+    
+}
