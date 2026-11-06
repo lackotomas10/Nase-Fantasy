@@ -1,9 +1,27 @@
 *{
     text-align: center;
+    font-family: Optima, sans-serif;
+}
+
+body{
+    background-color: #F5F5F5;
 }
 
 header{
     background-color: blue;
+    display: flex;
+}
+
+header img{
+    width: 12vw;
+    margin: 1vw;
+    height: auto;
+
+}
+
+#Mainheadline{
+    color: #F5F5F5;
+    font-size: 7vw;
 }
 
 nav{
