@@ -1,8 +1,15 @@
 #Field{
     background-color: #5D5FEF;
     width: 88vw;
+    max-width: 620px;
     justify-self: center;
     border-radius: 23px;
+    margin: 2px;
+}
+
+.FieldPart{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .Player{
@@ -31,4 +38,23 @@
     .PName{
         margin-top: 7px;
     }
+}
+
+#Bench{
+    background-color: #5D5FEF;
+    width: 88vw;
+    max-width: 720px;
+    justify-self: center;
+    border-radius: 23px;
+    margin: 2px;
+
+    h2{
+        color: #F5F5F5;
+    }
+}
+
+#BenchChairs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }

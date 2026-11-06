@@ -1,6 +1,7 @@
 *{
     text-align: center;
     font-family: Optima, sans-serif;
+    color:#4042d3;
 }
 
 body{
@@ -8,12 +9,13 @@ body{
 }
 
 header{
-    background-color: blue;
+    background-color: #4042d3;
     display: flex;
 }
 
 header img{
     width: 12vw;
+    max-width: 74px;
     margin: 1vw;
     height: auto;
 
@@ -27,7 +29,7 @@ header img{
 nav{
     justify-content: space-around;
     display: flex;
-    background-color: blue;
+    background-color: #4042d3;
 }
 
 .LinkImg{
