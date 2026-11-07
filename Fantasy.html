@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="img/svgikony/Logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="General.css">
     <link rel="stylesheet" href="Fantasy.css">
-    <script src="Fantasy.js"></script>
+    <script src="Fantasy.js" defer></script>
 </head>
 <body>
     <header>
@@ -26,6 +26,12 @@
                         <img class="PImg" src="img/Players/Cristiano Ronaldo.png">
                         <div class="PBottomDiv"><p class="PPoints">0 b</p></div>
                     </div><!-- Při kliknutí možnost střídat/prodat -->
+                    
+                    <div class="Player">
+                        <div class="PTopDiv"><p class="PName">Name</p></div>
+                        <img class="PImg" src="img/Players/Cristiano Ronaldo.png">
+                        <div class="PBottomDiv"><p class="PPoints">0 b</p></div>
+                    </div>
 
                 </div>
                 <div class="FieldPart" id="Midfield">
@@ -42,18 +48,9 @@
                     </div>
 
 
+
                 </div>
                 <div class="FieldPart" id="Defence">
-                    <!-- Přidat hráče -->
-                    <div class="Player">
-                        <div class="PTopDiv"><p class="PName">Name</p></div>
-                        <img class="PImg" src="img/Players/Cristiano Ronaldo.png">
-                        <div class="PBottomDiv"><p class="PPoints">0 b</p></div>
-                    </div>
-
-
-                </div>
-                <div class="FieldPart" id="Box">
                     <!-- Přidat hráče -->
                     <div class="Player">
                         <div class="PTopDiv"><p class="PName">Name</p></div>
@@ -98,6 +95,17 @@
             </div>
 
         </div>
+        <div class="MidDiv" id="Transfering">
+            <table>
+                <tr>
+                    <th>Jméno</th><th>Pozice</th><th>Body</th><th>Góly</th><th>Asistence</th><!-- Přidat víc řad -->
+                </tr>
+                <tr>
+                    <td>Cristiano Ronaldo</td><td>Útočník</td><td>5</td><td>12</td><td>1</td>
+                </tr>
+
+            </table>
+        </div>
         <div id="Stats" class="MidDiv">
             <div id="StatTop"><h2>Statistiky</h2><img src="img/svgikony/ŠipkaD.svg" id="ExpImg" onclick="ExpandStats()"></div>
             <div id="StatsExtend">
@@ -119,7 +127,7 @@
     <footer>
         <nav>
             <a href=""><div id="LinkDiv"><img class="LinkImg" src="img/svgikony/Trofej.svg"><h5 class="LinkName">Liga</h5></div></a>
-            <a href=""><div id="LinkDiv"><img class="LinkImg"  src="img/svgikony/Sestava.svg"><h5 class="LinkName">Můj Tým</h5></div></a>
+            <a href="Fantasy.html"><div id="LinkDiv"><img class="LinkImg"  src="img/svgikony/Sestava.svg"><h5 class="LinkName">Můj Tým</h5></div></a>
             <a href=""><div id="LinkDiv"><img class="LinkImg"  src="img/svgikony/Nastavení.svg"><h5 class="LinkName">Nastavení</h5></div></a>
         </nav>
     </footer>
