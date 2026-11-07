@@ -143,3 +143,19 @@
 #StatsExtend.is-expanded{
     grid-template-rows: 1fr;
 }
+
+#Přehled h2,h5{
+    color: #F5F5F5;
+}
+
+#Přehled{
+    display: flex;
+}
+
+canvas{
+    border-radius: 11px;
+    width: 30vw;
+    aspect-ratio: 1 / 1.5;
+    border: 2px solid #3618bb;
+    background-color: #F5F5F5;
+}

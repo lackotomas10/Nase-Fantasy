@@ -19,6 +19,7 @@
         
         <div id="Team" class="HugeDiv">
             <h2>Můj Tým</h2>
+            <p>Dostupné přestupy: 0</p><p>Body tento MD: 0</p>
             <div id="Field" class="MidDiv">
                 <div class="FieldPart" id="Attack">
                     <div class="Player">
@@ -26,7 +27,7 @@
                         <img class="PImg" src="img/Players/Cristiano Ronaldo.png">
                         <div class="PBottomDiv"><p class="PPoints">0 b</p></div>
                     </div><!-- Při kliknutí možnost střídat/prodat -->
-                    
+
                     <div class="Player">
                         <div class="PTopDiv"><p class="PName">Name</p></div>
                         <img class="PImg" src="img/Players/Cristiano Ronaldo.png">
@@ -110,17 +111,25 @@
             <div id="StatTop"><h2>Statistiky</h2><img src="img/svgikony/ŠipkaD.svg" id="ExpImg" onclick="ExpandStats()"></div>
             <div id="StatsExtend">
                 <div id="Přehled">
-                    <h2>Přehled:</h2>
-                    <h5 id="PointsThisRound">Body v kole: 0</h5>
-                    <h5 id="BestPlayer">Váš hráč kola: 
-                        <div class="Player">
-                            <div class="PTopDiv"><p class="PName">Name</p></div>
-                            <img class="PImg" src="img/Players/Cristiano Ronaldo.png">
-                            <div class="PBottomDiv"><p class="PPoints">0 b</p></div>
-                        </div>
-                    </h5>
+                    <div>
+                        <h2>Přehled:</h2>
+                        <h5 id="PointsThisRound">Body v sezóně: 0</h5>
+                        <h5 id="BestPlayer">Váš hráč kola: 
+                            <div class="Player">
+                                <div class="PTopDiv"><p class="PName">Name</p></div>
+                                <img class="PImg" src="img/Players/Cristiano Ronaldo.png">
+                                <div class="PBottomDiv"><p class="PPoints">0 b</p></div>
+                            </div>
+                        </h5>
+                    </div>
+                    <div id="VíceStat">
 
+
+                        <h5>Graf</h5>
+                        <canvas></canvas><!-- Graf dodělat později -->
+                    </div>
                 </div>
+                
             </div>
         </div>
     </main>
@@ -130,7 +139,9 @@
             <a href="Fantasy.html"><div id="LinkDiv"><img class="LinkImg"  src="img/svgikony/Sestava.svg"><h5 class="LinkName">Můj Tým</h5></div></a>
             <a href=""><div id="LinkDiv"><img class="LinkImg"  src="img/svgikony/Nastavení.svg"><h5 class="LinkName">Nastavení</h5></div></a>
         </nav>
-    </footer>
-    
+        <div id="Konec">
+
+        </div>
+    </footer> 
 </body>
 </html>
