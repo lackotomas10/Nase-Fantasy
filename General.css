@@ -30,6 +30,12 @@ nav{
     justify-content: space-around;
     display: flex;
     background-color: #4042d3;
+    color: #F5F5F5;
+    padding: 5px;
+    h5{
+        color: #F5F5F5;
+        font-size: 102%;
+    }
 }
 
 .LinkImg{
@@ -37,3 +43,4 @@ nav{
     height: auto;
     
 }
+
