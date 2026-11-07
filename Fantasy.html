@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="img/svgikony/Logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="General.css">
     <link rel="stylesheet" href="Fantasy.css">
+    <script src="Fantasy.js"></script>
 </head>
 <body>
     <header>
@@ -15,15 +16,10 @@
         
     </header>
     <main>
-        <div id="Přehled">
-            <h2>Přehled</h2>
-            <h5 id="PointsThisRound">Body v kole: 0</h5>
-            <h5 id="BestPlayer">Váš hráč kola: Name</h5>
-
-        </div>
-        <div>
+        
+        <div id="Team" class="HugeDiv">
             <h2>Můj Tým</h2>
-            <div id="Field">
+            <div id="Field" class="MidDiv">
                 <div class="FieldPart" id="Attack">
                     <div class="Player">
                         <div class="PTopDiv"><p class="PName">Name</p></div>
@@ -67,7 +63,7 @@
 
 
                 </div>
-            <div id="Bench">
+            <div id="Bench" class="MidDiv">
                 <h2>Lavička</h2>
                 <div id="BenchChairs">
                     <div class="Player">
@@ -101,6 +97,23 @@
             </div>
             </div>
 
+        </div>
+        <div id="Stats" class="MidDiv">
+            <div id="StatTop"><h2>Statistiky</h2><img src="img/svgikony/ŠipkaD.svg" id="ExpImg" onclick="ExpandStats()"></div>
+            <div id="StatsExtend">
+                <div id="Přehled">
+                    <h2>Přehled:</h2>
+                    <h5 id="PointsThisRound">Body v kole: 0</h5>
+                    <h5 id="BestPlayer">Váš hráč kola: 
+                        <div class="Player">
+                            <div class="PTopDiv"><p class="PName">Name</p></div>
+                            <img class="PImg" src="img/Players/Cristiano Ronaldo.png">
+                            <div class="PBottomDiv"><p class="PPoints">0 b</p></div>
+                        </div>
+                    </h5>
+
+                </div>
+            </div>
         </div>
     </main>
     <footer>
