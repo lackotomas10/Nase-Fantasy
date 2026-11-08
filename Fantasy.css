@@ -44,19 +44,17 @@
 
 #Bench{
     background-color: #5D5FEF;
-    width: 83vw;
+    box-sizing: border-box;
+    width: 100%;
     max-width: 720px;
-    justify-self: center;
     border-radius: 23px;
-    margin: 11px;
-    margin-bottom: 20px;
-    
+    margin: 11px auto 20px;
     border: 9px solid #F5F5F5;
 
 
     h2{
         color: #F5F5F5;
-        margin-bottom: -10px;
+        margin-bottom: 8px;
     }
 
     .Player{
@@ -67,11 +65,75 @@
 }
 
 #BenchChairs{
-    margin-bottom: -20px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 5px;
+    flex-wrap: nowrap;
+    align-items: center;
+    box-sizing: border-box;
+    gap: clamp(4px, 2vw, 14px);
+}
+
+.BenchSlot{
+    box-sizing: border-box;
+    width: 124px;
+    height: 204px;
+    margin: 0 clamp(-20px, calc(8.8vw - 62px), 0px);
+    border: 2px dashed #F5F5F5;
+    border-radius: 23px;
+    flex: 0 0 auto;
+}
+
+.FieldSlot{
+    box-sizing: border-box;
+    width: 124px;
+    height: 204px;
+    margin: 5px;
+    border: 2px dashed #4042d3;
+    border-radius: 23px;
+    flex: 0 0 auto;
+    cursor: pointer;
+}
+
+#Bench .BenchSlot{
+    cursor: pointer;
+}
+
+.FieldSlot.is-selected{
+    background-color: #5D5FEF;
+}
+
+#Bench .Player,
+#Bench .BenchSlot{
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+    aspect-ratio: 3 / 5;
+    flex: 1 1 0;
+    min-width: 0;
+    min-height: 0;
+    max-width: 120px;
+    transform: none;
+    overflow: hidden;
+    margin: 0;
+}
+
+#Bench .Player{
+    font-size: clamp(7px, 2.5vw, 16px);
+}
+
+#Bench .Player .PImg{
+    box-sizing: border-box;
+    width: calc(100% - 10px);
+    max-width: 100px;
+    padding: 3px;
+}
+
+#Bench .Player .PName,
+#Bench .Player .PPoints{
+    font-size: inherit;
 }
 
 #Stats{
@@ -123,21 +185,75 @@
 }
 
 #Transfering{
+    display: none;
+    flex-direction: column;
     background-color: #3618bb;
     color: #F5F5F5;
     box-shadow: 0px 0px 40px 20px #03043B;
     width: 84vw;
     max-width: 1600px;
-    margin: 0px;
-    transform: translateY(-200px);
-
-    table{
-        align-self: center;
-    }
+    margin: 11px auto;
+    padding: 12px;
+    overflow-x: auto;
 
     th,td{
         color: #F5F5F5;
+        padding: 7px;
     }
+}
+
+.TransferTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.TransferTop h2{
+    color: #F5F5F5;
+}
+
+.TransferSectionTitle{
+    color: #F5F5F5;
+    margin: 12px 0 4px;
+}
+
+#Transfering table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#Transfering .SellingPlayer{
+    background-color: #4042d3;
+}
+
+#Transfering button{
+    border: 0;
+    border-radius: 10px;
+    padding: 8px 12px;
+    color: #4042d3;
+    background-color: #F5F5F5;
+    cursor: pointer;
+}
+
+#TransferMessage{
+    color: #F5F5F5;
+}
+
+.Player{
+    cursor: pointer;
+    user-select: none;
+}
+
+.Player.is-dragging{
+    opacity: 0.45;
+}
+
+.Player.is-drop-target{
+    outline: 3px dashed #F5F5F5;
+}
+
+.BenchSlot.is-drop-target{
+    background-color: #4042d3;
 }
 
 #StatsExtend.is-expanded{
@@ -154,8 +270,8 @@
 
 canvas{
     border-radius: 11px;
-    width: 30vw;
-    aspect-ratio: 1 / 1.5;
+    width: 190px;
+    height: 266px;
     border: 2px solid #3618bb;
     background-color: #F5F5F5;
 }

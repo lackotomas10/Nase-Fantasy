@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nastavení | Naše Fantasy</title>
+    <link rel="shortcut icon" href="img/svgikony/Logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="General.css">
+    <link rel="stylesheet" href="Nastavení.css">
+    <script src="Nastavení.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="img/svgikony/Logo.svg" id="LobbyLogo">
+        <h1 id="Mainheadline">Naše fantasy</h1>
+    </header>
+    <main>
+        <section class="MidDiv SettingsBox">
+            <h2>Nastavení</h2>
+            <form id="SettingsForm">
+                <label for="TeamName">Název týmu</label>
+                <div class="NameRow">
+                    <input id="TeamName" name="teamName" maxlength="24" value="Můj tým">
+                    <button type="submit">Uložit název</button>
+                </div>
+                <p id="SaveMessage" aria-live="polite"></p>
+            </form>
+            <section class="TeamActions">
+                <h3>Správa týmu</h3>
+                <button id="EmptyTeam" type="button">Vyprázdnit tým</button>
+                <button id="DeleteTeam" type="button">Smazat tým</button>
+                <button id="ChangePassword" type="button">Změnit heslo</button>
+                <p id="ActionMessage" aria-live="polite"></p>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <a href="Liga.html"><div id="LinkDiv"><img class="LinkImg" src="img/svgikony/Trofej.svg"><h5 class="LinkName">Liga</h5></div></a>
+            <a href="Fantasy.html"><div id="LinkDiv"><img class="LinkImg" src="img/svgikony/Sestava.svg"><h5 class="LinkName">Můj Tým</h5></div></a>
+            <a href="Nastavení.html"><div id="LinkDiv"><img class="LinkImg" src="img/svgikony/Nastavení.svg"><h5 class="LinkName">Nastavení</h5></div></a>
+        </nav>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+.SettingsBox{
+    color: #F5F5F5;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.SettingsBox h2{
+    color: #F5F5F5;
+}
+
+#SettingsForm{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+#SettingsForm label{
+    color: #F5F5F5;
+    text-align: left;
+}
+
+#SettingsForm > label{
+    margin-bottom: -5px;
+}
+
+.NameRow{
+    display: flex;
+    gap: 8px;
+}
+
+#TeamName,
+#SettingsForm button,
+.TeamActions button{
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+    font: inherit;
+}
+
+#TeamName{
+    min-width: 0;
+    flex: 1;
+    background-color: #F5F5F5;
+    color: #4042d3;
+}
+
+#SettingsForm button{
+    color: #F5F5F5;
+    background-color: #4042d3;
+    cursor: pointer;
+}
+
+.TeamActions{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 520px;
+    margin: 18px auto 0;
+}
+
+.TeamActions h3{
+    color: #F5F5F5;
+    margin: 0;
+}
+
+.TeamActions button{
+    color: #F5F5F5;
+    background-color: #4042d3;
+    cursor: pointer;
+}
+
+#SaveMessage{
+    min-height: 1.2em;
+    margin: 0;
+    color: #F5F5F5;
+}
+
+#ActionMessage{
+    min-height: 1.2em;
+    margin: 0;
+    color: #F5F5F5;
+}

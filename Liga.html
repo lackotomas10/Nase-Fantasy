@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liga | Naše Fantasy</title>
+    <link rel="shortcut icon" href="img/svgikony/Logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="General.css">
+    <link rel="stylesheet" href="Liga.css">
+    <script src="Liga.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="img/svgikony/Logo.svg" id="LobbyLogo">
+        <h1 id="Mainheadline">Naše fantasy</h1>
+    </header>
+    <main>
+        <section class="MidDiv LeagueBox">
+            <h2>Ligová tabulka</h2>
+            <div class="TableWrap">
+                <table id="LeagueTable">
+                    <thead>
+                        <tr><th>#</th><th>Tým</th><th>Body</th><th>Hráč kola</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td class="TeamNameCell">Můj tým</td><td>0</td><td>—</td></tr>
+                        <tr><td>2</td><td>Tým 2</td><td>0</td><td>—</td></tr>
+                        <tr><td>3</td><td>Tým 3</td><td>0</td><td>—</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="Note">Ostatní týmy a statistiky doplní data z API.</p>
+        </section>
+        <section class="MidDiv LeagueBox">
+            <h2>Globální statistiky</h2>
+            <div class="GlobalStats">
+                <div><h3>Nejpoužívanější hráč</h3><p>—</p></div>
+                <div><h3>Průměrné body týmu</h3><p>0</p></div>
+                <div><h3>Tým s nejvíce body</h3><p id="TopScoringTeam">—</p></div>
+                <div><h3>Počet týmů</h3><p id="TeamCount">3</p></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <a href="Liga.html"><div id="LinkDiv"><img class="LinkImg" src="img/svgikony/Trofej.svg"><h5 class="LinkName">Liga</h5></div></a>
+            <a href="Fantasy.html"><div id="LinkDiv"><img class="LinkImg" src="img/svgikony/Sestava.svg"><h5 class="LinkName">Můj Tým</h5></div></a>
+            <a href="Nastavení.html"><div id="LinkDiv"><img class="LinkImg" src="img/svgikony/Nastavení.svg"><h5 class="LinkName">Nastavení</h5></div></a>
+        </nav>
+    </footer>
+</body>
+</html>
